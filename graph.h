@@ -1,5 +1,9 @@
 // Directed unweighted graph.
 // Calculates BFS shortest path between 2 vertices.
+#pragma once
+#ifndef _GRAPH_H_
+#define _GRAPH_H_
+
 #include <iostream>
 #include <vector>
 #include <limits>
@@ -105,3 +109,4 @@ public:
 			std::cout << i << " ";
 	}
 };
+#endif
