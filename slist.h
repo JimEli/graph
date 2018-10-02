@@ -1,6 +1,5 @@
 // Basic singly-linked list.
 // 7.19.2018 JME
-#pragma once
 
 #ifndef SL_LIST_H
 #define SL_LIST_H
@@ -23,7 +22,8 @@ private:
 	// list head and tail node pointers.
 	Node<T>* head;
 	Node<T>* tail;
-	std::size_t count; // Count of nodes in list.
+	// Count of nodes in list.
+	std::size_t count; 
 
 	Node<T>* find(const T& e)  // Find and return node.
 	{
@@ -164,7 +164,8 @@ public:
 		}
 	}; // End iterator inner class.
 
-	   // Inner class const_iterator.
+	//
+	// Inner class const_iterator.
 	class const_iterator : public std::iterator<std::forward_iterator_tag, const T, ptrdiff_t, const T*, const T&>
 	{
 	private:
@@ -198,7 +199,7 @@ public:
 		}
 	}; // End const_iterator inner class.
 
-	   // Begin and end iterators.
+	// Begin and end iterators.
 	iterator begin() const { return iterator(head); }
 	iterator end() const { return iterator(tail); }
 	const_iterator cbegin() const { return const_iterator(head); }
@@ -526,4 +527,3 @@ void list<T>::remove(T e)
 }
 
 #endif
-
