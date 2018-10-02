@@ -1,6 +1,6 @@
 // Directed unweighted graph.
 // Calculates BFS shortest path between 2 vertices.
-#pragma once
+
 #ifndef _GRAPH_H_
 #define _GRAPH_H_
 
@@ -19,8 +19,10 @@ class Graph
 private:
 	// Graph adjaceny list.
 	std::vector<int> adjList[NUM_VERTICES];
+
 	// Predecessor of i.
 	int pred[NUM_VERTICES];
+	
 	// Distance of i from src.
 	int dist[NUM_VERTICES];
 
@@ -37,6 +39,7 @@ public:
 	{
 		// Queue of vertices whose adjacency list is scanned per normal DFS algorithm.
 		Queue<int> queue;
+	
 		// Stores information whether ith vertex is reached at least once in BFS.
 		bool visited[NUM_VERTICES];
 
@@ -90,6 +93,7 @@ public:
 
 		// Shortest path.
 		std::vector<int> path;
+		
 		// Walk the path.
 		int step = dest;
 
@@ -109,4 +113,5 @@ public:
 			std::cout << i << " ";
 	}
 };
+
 #endif
