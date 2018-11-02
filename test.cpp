@@ -11,7 +11,7 @@ int main()
 	Graph g;
 	int start = 0, goal = 34;
 
-	// Lets solve this simple 36x36 maze:
+	// Lets solve this simple 6x6 maze:
 	// S #### - 012345
 	// #  # # - 678901
 	// ## # # - 234567
