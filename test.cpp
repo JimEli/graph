@@ -20,7 +20,7 @@ int main()
 	// ####G# - 012345
 	// # = wall, S = start and G = end.
 
-	// add_edge(adjacency list, src vertex, dest vertex).
+	// Graph add edge to adjacency list: add_edge(src vertex, dest vertex).
 	g.addEdge(0, 1);
 	g.addEdge(1, 7);
 	g.addEdge(7, 8);
