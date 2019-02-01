@@ -2,12 +2,13 @@
 
 For demonstration purposes, we solve a simple maze.
 Solves this simple 6x6 maze:
-''' text
+``` text
 	S ####
 	#  # #
 	## # #
 	#    #
  	# ## #
 	####G#
-'''
+
 Where, # = wall, S = start and G = end.
+```
